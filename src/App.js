@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import AjaxApiFetch from './components/AjaxApiFtech'
+import AsyncAwait from './components/AsyncAwaitAxios';
+import AxAysncAwait from './components/AxiosApiFetch';
+import AxiosApiFetch from './components/AxiosApiFetch';
+import WindowFetchApi from './components/WindowFetchApi'
+import Home from './components1/Home';
+import "./global.css"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <WindowFetchApi /> */}
+      {/* <AjaxApiFetch /> */}
+      {/* <AxiosApiFetch /> */}
+      {/* <AsyncAwait /> */}
+      <Home/>
     </div>
   );
 }
 
-export default App;
+export default App
